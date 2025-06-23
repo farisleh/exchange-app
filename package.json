@@ -1,0 +1,43 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:drop": "drizzle-kit drop",
+    "db:check": "drizzle-kit check",
+    "db:seed": "npx tsx server/db/seed.ts"
+  },
+  "dependencies": {
+    "@mdi/font": "^7.4.47",
+    "@pinia/nuxt": "^0.11.1",
+    "date-fns": "^4.1.0",
+    "dotenv": "^16.5.0",
+    "drizzle-orm": "^0.44.2",
+    "nuxt": "^3.17.5",
+    "pg": "^8.16.2",
+    "pinia": "^3.0.3",
+    "vue": "^3.5.16",
+    "vue-router": "^4.5.1",
+    "vuetify-nuxt-module": "0.18.7",
+    "zod": "^3.25.67"
+  },
+  "devDependencies": {
+    "@nuxt/test-utils": "^3.19.1",
+    "@types/pg": "^8.15.4",
+    "@vitest/ui": "^3.2.4",
+    "@vue/test-utils": "^2.4.6",
+    "drizzle-kit": "^0.31.1",
+    "happy-dom": "^18.0.1",
+    "jsdom": "^26.1.0",
+    "tsx": "^4.20.3",
+    "vitest": "^3.2.4",
+    "vuetify": "^3.8.10"
+  }
+}
